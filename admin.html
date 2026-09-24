@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lrental Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="admin-page">
+  <header>
+    <div class="nav-inner admin-nav">
+      <a href="admin.html" class="brand-link" aria-label="Lrental admin dashboard">
+        <div class="logo-badge">
+          <svg width="42" height="42" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="48" height="48" rx="8" fill="#002F34" />
+            <path d="M12 11V37H26" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M22 11H31C35.4 11 39 14.5 39 19C39 23.5 35.4 27 31 27H22" stroke="#00A49F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M28 27L38 37" stroke="#00A49F" stroke-width="5" stroke-linecap="round" />
+          </svg>
+        </div>
+        <span class="brand-text">L<span>rental</span></span>
+      </a>
+      <div class="admin-nav-actions">
+        <span class="admin-user">Admin account</span>
+        <a class="admin-logout" href="login.html">Log out</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-container">
+    <section class="admin-heading">
+      <div>
+        <p class="eyebrow">Control center</p>
+        <h1>Admin dashboard</h1>
+        <p>Keep an eye on listings, inquiries, and activity across Lrental.</p>
+      </div>
+      <a href="pro1.html" class="admin-primary-btn">View marketplace</a>
+    </section>
+
+    <section class="admin-stats" aria-label="Platform overview">
+      <article class="admin-stat-card">
+        <span class="stat-label">Active listings</span>
+        <strong>128</strong>
+        <span class="stat-change positive">+12 this month</span>
+      </article>
+      <article class="admin-stat-card">
+        <span class="stat-label">Pending reviews</span>
+        <strong>14</strong>
+        <span class="stat-change warning">Needs attention</span>
+      </article>
+      <article class="admin-stat-card">
+        <span class="stat-label">New inquiries</span>
+        <strong>36</strong>
+        <span class="stat-change positive">+8 today</span>
+      </article>
+      <article class="admin-stat-card">
+        <span class="stat-label">Registered users</span>
+        <strong>842</strong>
+        <span class="stat-change neutral">Across all regions</span>
+      </article>
+    </section>
+
+    <section class="admin-content-grid">
+      <article class="admin-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Moderation queue</p>
+            <h2>Recent listings</h2>
+          </div>
+          <button class="panel-link" type="button" onclick="alert('Listing management will be available soon.')">View all</button>
+        </div>
+        <div class="listing-table-wrap">
+          <table class="listing-table">
+            <thead>
+              <tr>
+                <th>Listing</th>
+                <th>Owner</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>6 Acre Fertile Farmland</strong><span>Meerut Bypass</span></td>
+                <td>Rakesh Kumar</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="table-action" type="button" onclick="alert('Review tools will be available soon.')">Review</button></td>
+              </tr>
+              <tr>
+                <td><strong>Roadside Warehouse Plot</strong><span>Partapur Industrial Zone</span></td>
+                <td>Neha Singh</td>
+                <td><span class="status approved">Approved</span></td>
+                <td><button class="table-action" type="button" onclick="alert('Listing details will be available soon.')">Open</button></td>
+              </tr>
+              <tr>
+                <td><strong>Solar Farm Lease Opportunity</strong><span>Mawana Road</span></td>
+                <td>Amit Verma</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="table-action" type="button" onclick="alert('Review tools will be available soon.')">Review</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <aside class="admin-panel activity-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Latest signals</p>
+            <h2>Activity</h2>
+          </div>
+        </div>
+        <ul class="activity-list">
+          <li><span class="activity-dot teal"></span><div><strong>New listing submitted</strong><p>6 Acre Fertile Farmland · 8 min ago</p></div></li>
+          <li><span class="activity-dot yellow"></span><div><strong>Review requested</strong><p>Roadside Warehouse Plot · 24 min ago</p></div></li>
+          <li><span class="activity-dot dark"></span><div><strong>New user registered</strong><p>Priya Sharma · 1 hour ago</p></div></li>
+          <li><span class="activity-dot teal"></span><div><strong>Inquiry received</strong><p>Solar Farm Lease Opportunity · 2 hours ago</p></div></li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+</body>
+
+</html>
